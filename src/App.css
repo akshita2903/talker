@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  /* bilkul bhi jgah nhi chodega */
+  margin: 0%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  color:wheat;
+  /* background-color:rgba(10, 10, 10, 0.966); */
+/* background-color: rgb(96, 64, 124); */
+background-color: rgb(220, 198, 240);
+  place-items: center;
+  height:100vh;
+  /* abhi tk beech me nhi aaya ,ab ayega */
+  display:grid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  background-color: rgb(96, 28, 160);
+  /* background-color: rgba(66, 64, 64, 0.658); */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 90vh;
+  width: 90vw;
+  box-shadow:-2px 4px 20px -6px rgba(219, 231, 233, 0.603);
 }

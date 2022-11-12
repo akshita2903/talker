@@ -1,0 +1,61 @@
+/* saare icons and wo dp wala header */
+/*left side wala pur */
+.sideBar{
+  display:flex;
+  flex-direction: column;
+    flex:0.35;
+    
+}
+/* search bar aur input wala area*/
+.sideBar_search{
+  display:flex;
+  align-items: center;
+  color:#323421;
+  background-color: rgba(126, 127, 134, 0.589);
+  padding:10px;
+}
+.sideBar_header{
+  /* float: right; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  
+  border-right: 1px solid #7c3bc5d8;
+  
+}
+.sideBar_headerRight{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+/* globalclassName for IconButton ke neech ejo hai msg,donut wale */
+.MuiSvgIcon-root{
+  color: rgba(240, 237, 243, 0.897);
+}
+.sideBar_headerRight > .MuiSvgIcon-root{
+  margin-right: 2vw;
+  font-size: 24px !important;
+}
+/*search bar aur input wala background*/
+.sideBar_searchContainer{
+  display: flex;
+  align-items: center;
+  width:100%;
+  height:35px;
+  background-color: white;
+  border-radius: 20px;
+}
+/* search icon input wala*/
+.sideBar_searchContainer > .MuiSvgIcon-root{
+  color:#323421;
+padding:10px;
+}
+
+/*search ke input wala */
+.sideBar_searchContainer > input{
+  border: none;
+
+  margin-left: 10px;
+}
+/*yaha pe left side wala over hua*/

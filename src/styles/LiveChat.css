@@ -1,0 +1,24 @@
+.Chat{
+    flex:0.65; /*0.35 sidebar ko diya hai*/
+display:flex;
+flex-direction: column;
+}
+.Chat_header{
+    display:flex;
+    padding:20px;
+    align-items: center;
+    border-bottom: 1px solid #7c3bc5d8;
+}
+.Chat_header_info{
+    flex:1;
+    /* bina yeh padding saare icon bgl me the ab left me hai */
+    padding-left: 20px;
+}
+.Chat_headerRight{
+    display:flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+.Chat_body{
+background-color: aqua;
+}
