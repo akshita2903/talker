@@ -20,5 +20,32 @@ flex-direction: column;
     min-width: 100px;
 }
 .Chat_body{
-background-color: aqua;
+background-color: rgb(96, 28, 160);
+flex: 1;
+background-repeat: repeat;
+background-position: center;
+padding:30px;
+overflow: scroll;
+}
+ .chat_message{
+position: relative;
+font-size: 16px;
+padding: 10px;
+background-color: rgb(24, 5, 43);
+width: fit-content;
+}
+.chat_name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.time_stamp{
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.chat_receiver{
+    margin-left: auto;
+    background-color: rgb(39, 4, 136);
 }

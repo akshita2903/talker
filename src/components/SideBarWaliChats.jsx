@@ -19,7 +19,7 @@ if(roomName)
 
 }
 //agar nya chat kna hai to usko uper dikhao baaki uske neech
-//just like ecnt uper hota hai
+//just like recnt uper hota hai
 return (addNewChat)?(<>
   <div onClick={addChat} className='sideBarChat'>
         <h2>Add new Chat</h2>

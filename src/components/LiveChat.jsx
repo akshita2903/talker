@@ -41,7 +41,12 @@ setSeed(x);
 
 </div>
 </div>
-<div className="Chat_body"></div>
+<div className="Chat_body"><p className={`chat_message ${true && "chat_receiver"}`}>
+<span className="chat_name">Ak</span>
+    Hey guys
+    <span className="time_stamp">9:30pm</span>
+</p>
+</div>
 <div className="Chat_footer"></div>
         </div>
     </>);
