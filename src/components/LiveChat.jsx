@@ -6,6 +6,10 @@ import  MoreVertIcon from '@mui/icons-material/MoreVert';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 //siptipin jaisa wala
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+//insert emoji ke liye
+import TagFacesIcon from '@mui/icons-material/TagFaces';
+//mic
+import MicIcon from '@mui/icons-material/Mic';
 import '../styles/LiveChat.css'
 function LiveChat(){
 
@@ -41,13 +45,22 @@ setSeed(x);
 
 </div>
 </div>
+{/* //yaha true ke jgah user.login hai yaha nhi wo dekha jyega */}
 <div className="Chat_body"><p className={`chat_message ${true && "chat_receiver"}`}>
 <span className="chat_name">Ak</span>
     Hey guys
     <span className="time_stamp">9:30pm</span>
 </p>
 </div>
-<div className="Chat_footer"></div>
+<div className="Chat_footer">
+    <TagFacesIcon/>
+    <form>
+        <input type="text"/>
+        <button>Send a message</button>
+    </form>
+  
+    <MicIcon/>
+</div>
         </div>
     </>);
 }
