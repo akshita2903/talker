@@ -19,14 +19,7 @@ flex-direction: column;
     justify-content: space-between;
     min-width: 100px;
 }
-.Chat_body{
-background-color: rgb(96, 28, 160);
-flex: 1;
-background-repeat: repeat;
-background-position: center;
-padding:30px;
-overflow: scroll;
-}
+
  .chat_message{
 position: relative;
 font-size: 16px;
@@ -49,10 +42,28 @@ width: fit-content;
     margin-left: auto;
     background-color: rgb(39, 4, 136);
 }
+.Chat_body{
+    background-color: rgb(96, 28, 160);
+    flex: 1;
+    background-repeat: repeat;
+    background-position: center;
+    padding:30px;
+    overflow: scroll;
+    }
 .Chat_footer{
 display: flex;
 justify-content: space-around;
 align-items: center;
 height:62px;
 border-top: 1px solid #fff;
+}
+/* form footer ke alignment ke saath rhe */
+.Chat_footer>form{
+    flex:1;
+    display: flex;
+}
+.Chat_footer>form>input{
+    flex:1;
+    border-radius: 30px;
+    padding: 10px;
 }

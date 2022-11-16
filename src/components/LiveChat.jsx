@@ -12,13 +12,20 @@ import TagFacesIcon from '@mui/icons-material/TagFaces';
 import MicIcon from '@mui/icons-material/Mic';
 import '../styles/LiveChat.css'
 function LiveChat(){
-
-    const[seed,setSeed]=React.useState('')
+console.log(process.env.REACT_APP_API_KEY)
+    const[seed,setSeed]=React.useState('');
+    const[input,setInput]=React.useState('');
 //it run some code when component is loaded
 React.useEffect(()=>{
 const x=Math.floor((Math.random() * 5000));
 setSeed(x);
 },[]);
+function sendMessage(e){
+    e.preventDefault();
+    console.log("Meesage send" ,input);
+    setInput('');
+}
+
     return(<>
 
 
@@ -55,8 +62,10 @@ setSeed(x);
 <div className="Chat_footer">
     <TagFacesIcon/>
     <form>
-        <input type="text"/>
-        <button>Send a message</button>
+        <input placeholder='Type a message'  value={input} type="text" onChange={
+            (e)=>setInput(e.target.value)
+        }/>
+        <button type="submit" onClick={sendMessage}>Send a message</button>
     </form>
   
     <MicIcon/>
